@@ -1,0 +1,49 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+#cabecera {
+    width: 800px;
+    border: 1px solid black;
+    height: auto;
+    padding: 20px;
+}
+
+#detalle {
+    width: 800px;
+    border: 1px solid black;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.movimiento td, th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.nombre {
+    width: 300px;
+}
+
+@media print {
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}

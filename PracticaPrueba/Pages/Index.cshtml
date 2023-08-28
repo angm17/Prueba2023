@@ -1,0 +1,66 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <h1>Prueba</h1>
+    <div id="cabecera">
+        <div id="totales">
+            <h4 class="cab">Documento: #<span id="CabDocumento"></span></h4>
+            <h4 class="cab">Subtotal: <span id="CabSubtotal"></span></h4>
+            <h4 class="cab">Base12: <span id="CabBase12"></span></h4>
+            <h4 class="cab">Base0: <span id="CabBase0"></span></h4>
+            <h4 class="cab">Impuesto: <span id="CabImpuesto"></span></h4>
+            <h4 class="cab">Total: <span id="CabTotal"></span></h4>
+        </div>
+    <button id="Guardar" class="no-print">Guardar Transaccion</button>
+    </div>
+
+
+    <div id="detalle">
+    <div id="agregar" class="no-print">
+            <input id="Articulo" type="text" placeholder="Articulo">
+            <select id="TipoIva">
+                <option value="12">IVA 12</option>
+                <option value="0">IVA 0</option>
+            </select>
+            <input id="Cantidad" type="number" placeholder="Cantidad" value="1">
+            <input id="Precio" type="number" placeholder="Precio" value="0">
+        <button id="BtnAgregar" class="no-print">Agregar</button>
+        </div>
+
+        <div>
+            <HR></HR>
+            <table>
+                <thead>
+                    <tr>
+                    <th class="no-print"></th>
+                        <th class="nombre">Articulo</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>TipoIva</th>
+                        <th>Impuesto</th>
+                        <th>Total</th>
+                    </tr>
+
+                </thead>
+                <tbody id="movimientos">
+                    <!-- <tr class="movimiento">
+                        <td><button>X</button></td>
+                        <td class="nombre">Articulo de prueba</td>
+                        <td class="precio">10</td>
+                        <td class="cantidad">5</td>
+                        <td class="subtotal">50</td>
+                        <td class="impuesto">6</td>
+                        <td class="total">56</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
