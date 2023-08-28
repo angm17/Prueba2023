@@ -114,6 +114,8 @@ BtnAgregar.addEventListener("click", function (e) {
     let tdbutton = document.createElement("td");
     tdbutton.classList.add("no-print")
     let button = document.createElement("button");
+    button.classList.add("btn")
+    button.classList.add("btn-danger") 
     button.innerText = "X";
 
     tdbutton.append(button)
@@ -170,8 +172,8 @@ BtnAgregar.addEventListener("click", function (e) {
 
     InputArticulo.value = "";
     InputTipoIva.value = 12;
-    InputCantidad.value = 1;
-    InputPrecio.value = 0;
+    InputCantidad.value = "";
+    InputPrecio.value = "";
 
     DimeTotales(totales);
 })
