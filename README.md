@@ -19,3 +19,6 @@ Considere que el encabezado de la factura debe diferenciar Base Imponible IVA 0%
 
 El programa debe guardar la factura, mostrar la vista previa para imprimir (Crystal Reports, Informes de Visual Studio, SSRS, o cualquier otro), y limpiar la pantalla para introducir una nueva.
 
+
+
+# es una aplicación no hecha para producción. no tiene seguridades y no tiene muchas validaciones, no se recomienda su uso más que para fines academicos 
